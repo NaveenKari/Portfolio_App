@@ -714,6 +714,110 @@ main { position: relative; z-index: 1; }
   .experience-head { flex-direction: column; align-items: flex-start; }
 }
 
+/* ---------- Certifications ---------- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card-bg);
+  text-decoration: none;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.cert-card:hover {
+  border-color: var(--accent-1);
+  transform: translateY(-2px);
+}
+.cert-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: var(--bg-soft);
+  object-fit: contain;
+  padding: 5px;
+}
+.cert-body { flex: 1; min-width: 0; }
+.cert-body h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: var(--text-0);
+}
+.cert-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.cert-link-arrow {
+  color: var(--text-muted);
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.cert-card:hover .cert-link-arrow {
+  color: var(--accent-2);
+  transform: translate(2px, -2px);
+}
+
+.publication-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.publication-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card-bg);
+  text-decoration: none;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.publication-card:hover {
+  border-color: var(--accent-1);
+  transform: translateY(-2px);
+}
+.publication-card:hover .cert-link-arrow {
+  color: var(--accent-2);
+  transform: translate(2px, -2px);
+}
+.publication-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.publication-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.publication-body h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text-0);
+}
+.publication-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.publication-authors {
+  font-size: 13px;
+  color: var(--text-1);
+}
+
 /* ---------- Contact ---------- */
 .section-contact {
   text-align: center;

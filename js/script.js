@@ -137,11 +137,11 @@
       })();
     }
 
-    const sections = ["about", "skills", "projects", "experience", "contact"];
+    const sections = ["about", "skills", "projects", "experience", "certifications", "contact"];
 
     const commands = {
       help: () => {
-        printLine("Commands: help, whoami, about, skills, projects, experience, contact, clear");
+        printLine("Commands: help, whoami, about, skills, projects, experience, certifications, contact, clear");
       },
       whoami: () => {
         printLine("Full Stack Software Engineer building event-driven microservices with Spring Boot, Kafka, AWS — and AI-powered workflows.");
